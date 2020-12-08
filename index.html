@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styling.css">
+    <script src="javas.js"></script>
+    <title>Swegga Order</title>
+
+</head>
+<body>
+    <div class="body">
+    <!--side bar image-->
+    <div class="side_bar">
+        <img src="swegga.jpg" alt="swegga image">
+    </div>
+
+    <!---banner-->
+    <div id="banner">
+        <img src="delivery.gif" alt="">
+    </div>
+
+    <!--Navigation-->
+    <div id="navigation">
+        <img src="links.gif" alt="links" usemap="#image-map">
+        <map name="image-map">
+        <area target="" alt="" title="" href="home.html" coords="6,4,95,37" shape="rect">
+        <area target="" alt="" title="" href="services.html" coords="191,37,103,4" shape="rect">
+        <area target="" alt="" title="" href="product.html" coords="303,37,200,0" shape="rect">
+        <area target="" alt="" title="" href="order_status.html" coords="439,40,306,0" shape="rect">
+        <area target="" alt="" title="" href="contact.html" coords="558,40,445,0" shape="rect">
+        </map>
+    </div>
+
+    <!--Orders Table-->
+    <div class="orders">
+            <h1 class="caption">Product Summary</h1>
+
+            <!--Table-->
+            <table>
+                <tr>
+                    <th>Description</th>
+                    <th>Size</th>
+                    <th>Colour</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th style="width: 60px;">Total</th>
+                </tr>
+
+                <tr>
+                    <th><a href="#">Female Ski Jacket</a></th>
+                    <th><select name="color" id="color">
+                        <option value="small">small</option>
+                        <option value="medium">medium</option>
+                        <option value="large">large</option>
+                    </select></th>
+                    <th><select name="size" id="size">
+                        <option value="red">red</option>
+                        <option value="red">pink</option>
+                        <option value="red">black</option>
+                    </select></th>
+                    <th>R 150.95</th>
+                    <th><input type="text" id="female_quantity" style="width: 50px;"></th>
+                    <th id="fmale_total"></th>
+                </tr>
+
+                <tr>
+                    <th><a href="#">Male Ski Jacket</a></th>
+                    <th><select name="color" id="color">
+                        <option value="small">small</option>
+                        <option value="medium">medium</option>
+                        <option value="large">large</option>
+                    </select></th>
+                    <th><select name="size" id="size">
+                        <option value="red">red</option>
+                        <option value="red">blue</option>
+                        <option value="red">white</option>
+                    </select></th>
+                    <th>R 180.95</th>
+                    <th><input type="text" id="male_quantity" style="width: 50px;"></th>
+                    <th id="male_total"></th>
+                </tr>
+
+                <tr>
+                    <td colspan="4">Click to confirm and process your order.</td>
+                    <th><button onclick="result()">Total Price</button></th>
+                    <th id="total_price"></th>
+                </tr>
+            </table>
+            <br>
+            <hr>
+    </div>
+    <div class="copyright">
+        <p>@2020 Swegga Fashion - Amani Kashema</p>
+    </div>
+    </div>
+</body>
+</html>
